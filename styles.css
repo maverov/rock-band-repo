@@ -1,0 +1,630 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+@import url(//db.onlinewebfonts.com/c/5d35a36bacbab824395170f9d9d949ea?family=IndustryW00-Book);
+@import url(//db.onlinewebfonts.com/c/bf9f5d50c1b928ff21436517a1a95ad9?family=Proxima+Nova);
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+@font-face {font-family: 
+    src: url("//db.onlinewebfonts.com/t/5d35a36bacbab824395170f9d9d949ea.eot");
+    src: url("//db.onlinewebfonts.com/t/5d35a36bacbab824395170f9d9d949ea.eot?#iefix") format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/5d35a36bacbab824395170f9d9d949ea.woff2") format("woff2"),
+    url("//db.onlinewebfonts.com/t/5d35a36bacbab824395170f9d9d949ea.woff") format("woff"),
+    url("//db.onlinewebfonts.com/t/5d35a36bacbab824395170f9d9d949ea.ttf") format("truetype"),
+    url("//db.onlinewebfonts.com/t/5d35a36bacbab824395170f9d9d949ea.svg#IndustryW00-Book") format("svg");
+}
+
+@font-face {font-family: "Proxima Nova";
+    src: url("//db.onlinewebfonts.com/t/bf9f5d50c1b928ff21436517a1a95ad9.eot");
+    src: url("//db.onlinewebfonts.com/t/bf9f5d50c1b928ff21436517a1a95ad9.eot?#iefix") format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/bf9f5d50c1b928ff21436517a1a95ad9.woff2") format("woff2"),
+    url("//db.onlinewebfonts.com/t/bf9f5d50c1b928ff21436517a1a95ad9.woff") format("woff"),
+    url("//db.onlinewebfonts.com/t/bf9f5d50c1b928ff21436517a1a95ad9.ttf") format("truetype"),
+    url("//db.onlinewebfonts.com/t/bf9f5d50c1b928ff21436517a1a95ad9.svg#Proxima Nova") format("svg");
+}
+
+:root {
+    --mainTransition: all 0.3s ease-in-out;
+  }
+  
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  /* HEADER */
+.header {
+    min-height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('./img/ss_logo.png') 
+    center/cover no-repeat fixed;
+    position: relative;
+    padding-top: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  h1 {
+      font-family: "IndustryW00-Book";
+      color: white;
+  }
+
+  body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.4;
+}
+
+/* Utility Classes */
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 2rem;
+    overflow: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    border-bottom: 1px solid white;
+}
+
+p {
+    margin: 0.75rem 0;
+}
+
+.text-center {
+    text-align: center;
+}
+
+a.scroll {
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    padding-top: 1rem;
+}
+
+a.scroll:hover {
+    border: none;
+}
+
+a.scroll i {
+    font-size: 2rem;
+}
+
+a.scroll i:hover {
+    color: rgb(129, 129, 129);
+}
+
+.pt-1 { padding: 1.5rem 0; }
+.pt-2 { padding: 2rem 0; }
+.pt-3 { padding: 3rem 0; }
+
+.pb-1 { padding: 1.5rem; }
+.pb-2 { padding: 2rem; }
+.pb-3 { padding: 3rem; }
+
+.mt-1 { padding: 1.5rem; }
+
+.l-heading {
+    font-family: 'Raleway';
+    font-size: 3rem;
+    margin: 2rem 0;
+    line-height: 1.1;
+    font-weight: bold;
+}
+
+.bg-dark {
+    background-color: rgb(19, 19, 19);
+}
+
+.bg-primary {
+    background: #93cb52;
+    color: white;
+}
+
+/* Navbar */
+.logo {
+    text-align: center;
+}
+
+#navbar {
+    display: flex;
+    position: sticky;
+    top: 0;
+    color: #fff;
+    justify-content: space-between;
+    z-index: 1;
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+#navbar ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 0.75rem;
+    margin: 0 0.25rem;
+}
+
+#navbar ul li a {
+    font-family: "Proxima Nova";
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: .1em;
+    color: white;
+    line-height: 2em;
+    /* padding: 0.75rem;
+    margin: 0 0.25rem; */
+    margin-right: 2rem;
+}
+
+#navbar ul li a:hover {
+    color: lightgray;
+    border-bottom: 1px solid lightgray;
+    padding-bottom: 0.3rem;
+}
+
+/* HEADER */
+
+.header-photo {
+    width: 300px;
+    height: 220px;
+    border-radius: 70%;
+}
+
+.artist-name {
+    color: white;
+    font-style: italic;
+    font-size: 0.8rem;
+    display: block;
+    color: black;
+}
+
+.banner {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.landing-page {
+  margin-top: 6rem;
+  padding: 0.7rem;
+  text-align: center;
+}
+
+.header-title {
+    color: white;
+}
+
+.album-link:hover {
+    border: none;
+    text-decoration: none;
+}
+
+a img:hover {
+    border: none;
+    text-decoration: none;
+}
+
+.album-cover {
+    width: 250px;
+    height: 250px;
+}
+
+.album-cover:hover {
+      /* Start the shake animation and make the animation last for 0.5 seconds */
+  animation: shake 1.6s; 
+
+  /* When the animation is finished, start again */
+  animation-iteration-count: infinite; 
+}
+
+.artist-link {
+    color: white;
+}
+
+.artist-link:hover {
+    border-bottom: 1px dashed white;
+}
+
+.social-buttons {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.social-buttons img {
+    margin-right: 0.2rem;
+}
+
+.scroll-down {
+    color: white;
+
+}
+
+/* ABOUT US */
+#about-us {
+    background-color: #000000;
+    padding: 4rem 0;
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 3rem;
+}
+
+.group-photo img {
+    padding-top: 3.7rem;
+    width: 100%;
+    /* width: 550px;
+    height: 400px; */
+}
+
+.group-info {
+    font-family: "Proxima Nova";
+    line-height: 1.5rem;
+    color: white;
+    /* grid-row: 1 / span 1; */
+}
+
+.group-info h1 {
+    font-size: 1.8rem;
+    font-family: "Raleway";
+    padding-bottom: 1rem;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+}
+
+.group-info .author-signature {
+    text-align: end;
+    text-transform: lowercase;
+    font-family: "IndustryW00-Book";
+}
+
+.more {
+    color: white;
+    background-color: black;
+    padding: 1rem;
+    margin-top: 1rem;
+    outline: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "IndustryW00-Book";
+    float: center;
+}
+
+.more:hover {
+    text-decoration: none;
+    font-weight: bold;
+    border: 2px solid white;
+}
+
+@media only screen and (max-width: 700px) {
+    .about-grid {
+        grid-template-columns: 1fr;
+    }
+    
+}
+/* END OF ABOUT US */
+
+/* TOUR DATES */
+.tour-table {
+    display: flex;
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+    align-items: flex-start;
+    align-content: flex-start;
+    justify-content: space-between;
+    border-bottom: 0.6px solid #889EAF;
+    padding-bottom: 2rem;
+}
+
+.buy-tickets {
+    align-self: center;
+}
+
+.mt-1 {
+    margin-top: 1rem;
+}
+
+.tour-date {
+    display: flex;
+    font-size: 1rem;
+    font-family: "IndustryW00-Book";
+    text-transform: uppercase;
+    color: #E0E0E0;
+    text-align: center;
+    align-items: center;
+}
+
+.venue-name {
+    font-family: 'Raleway';
+    font-size: 22px;
+    color: #889EAF;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.venue-location {
+    margin: 0;
+    color: rgb(195, 211, 223);
+    letter-spacing: 1px;
+    font-family: 'Raleway';
+}
+
+.buy-tickets {
+    background-color: white;
+    border-radius: 3px;
+    color: black;
+    font-size: 14px;
+    font-family: Raleway;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: none;
+    letter-spacing: .5px;
+    padding: 0.3rem;
+}
+
+#tour {
+    padding: 5rem 0;
+}
+
+.btnMore {
+    padding: 1.1rem;
+    margin: 0.4rem;
+    border: 2px solid white;
+    width: 170px;
+    text-transform: uppercase;
+    font-family: "IndustryW00-Book";
+    text-align: center;
+}
+
+.btnMore:hover {
+    text-decoration: none;
+    transition: 1s;
+}
+/* END OF TOUR DATES */
+
+/* MUSIC */
+#music {
+    background-color: #000000;
+    min-height: 80vh;
+}
+
+.music-playlist {
+    display: flex;
+    justify-content: center;
+    padding-top: 4rem 0;
+    padding-bottom: 2rem;
+}
+
+#music h1 {
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+/* END OF MUSIC */
+
+/* CONTACTS */
+#contacts h1 {
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    text-transform: uppercase;
+    font-family:'Raleway';
+}
+#contacts form { max-width:420px; margin:50px auto; }
+
+#contacts .feedback-input {
+  color:white;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight:500;
+  font-size: 18px;
+  border-radius: 1px;
+  line-height: 22px;
+  background-color: transparent;
+  border:2px solid rgb(255, 255, 255);
+  transition: all 0.3s;
+  padding: 13px;
+  margin-bottom: 15px;
+  width:100%;
+  box-sizing: border-box;
+  outline:0;
+}
+
+#contacts .feedback-input:focus { border:2px solid rgb(70, 70, 70); }
+
+#contacts textarea {
+  height: 150px;
+  line-height: 150%;
+  resize:vertical;
+}
+
+#contacts [type="submit"] {
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  width: 100%;
+  background:rgb(255, 255, 255);
+  border-radius: 2px;
+  border:0;
+  cursor:pointer;
+  color:black;
+  font-size:24px;
+  padding-top:10px;
+  padding-bottom:10px;
+  transition: all 0.3s;
+  margin-top:-4px;
+  font-weight:700;
+}
+#contacts [type="submit"]:hover { background: darkgray; }
+/* CONTACTS */
+
+/* FOOTER */
+footer {
+    display: flex;
+    background-color: #000000;
+    padding-top: 2.5em;
+    flex-direction: row;
+    text-transform: uppercase;
+    flex-wrap: wrap;
+}
+
+.lower-footer {
+    padding-right: 2rem;
+    min-width: 100%;
+    text-align: center;
+    padding-bottom: 0.5rem;
+}
+
+.ft-paragraph {
+    color: white;
+    max-width: 200px;
+    font-size: 0.75rem;
+}
+
+.ft-band-paragraph {
+    color: white;
+    max-width: 200px;
+    font-size: 0.65rem;
+    font-family: "IndustryW00-Book";
+}
+
+.social-icons i {
+    color: white;
+    font-size: 2rem;
+    margin-right: 0.75rem;
+    margin-bottom: 0.3rem;
+}
+
+.social-icons i:hover {
+    color: lightgray;
+    animation: shake 1.3s; 
+    /* When the animation is finished, start again */
+    animation-iteration-count: infinite; 
+}
+
+.ft-title {
+    color: #fff;
+    font-family: "Proxima Nova";
+    font-size: 1.4rem;
+    padding-bottom: 0.625rem;
+}
+
+.band-title {
+    font-family: "Raleway";
+}
+
+.ft-main-item {
+    flex: 1;
+    padding: 0 2rem;
+    justify-content: center;
+}
+
+.sponsors {
+    flex-direction: column;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+}
+
+.sponsors img {
+    display: block;
+    padding-bottom: 0.5rem;
+}
+
+.sponsors img:hover {
+    animation: shake 1.7s; 
+    /* When the animation is finished, start again */
+    animation-iteration-count: infinite; 
+}
+
+.copyright {
+    font-size: 0.9rem;
+    font-family: "Proxima Nova";
+    color: white;
+}
+
+.dev {
+    font-size: 0.77rem;
+    font-family: "IndustryW00-Book";
+    color: white;
+    padding-bottom: 0.4rem;
+}
+
+.subs {
+    min-width: 360px;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+input[type="email"] {
+    border: 0;
+    padding: 0.625rem;
+    margin-top: 0.3125rem;
+    background-color: lightgrey;
+}
+input[type="submit"] {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    border: 0;
+    padding: 0.625rem 0.9375rem;
+    margin-top: 0.3125rem;
+}
+
+@media only screen and (max-width: 600px) {
+    .ft-main-item {
+      width: 100%;
+      margin-bottom: 2rem;
+    }
+
+    .lower-footer {
+        text-align: center;
+        padding: 0;
+    }
+
+    .sponsors img {
+        display: block;
+        padding-bottom: 1rem;
+        padding-left: 9rem;
+    }
+
+    form, .subs {
+        justify-content: center;
+    }
+
+    .subs {
+        text-align: center;
+    }
+
+    .subs .ft-paragraph {
+        display: none;
+    }
+  }
+/* END FOOTER */
+
+/* ANIMATIONS */
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
