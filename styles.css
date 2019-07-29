@@ -3,7 +3,7 @@
 @import url(//db.onlinewebfonts.com/c/bf9f5d50c1b928ff21436517a1a95ad9?family=Proxima+Nova);
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 
-@font-face {font-family: 
+@font-face {font-family: "IndustryW00-Book";
     src: url("//db.onlinewebfonts.com/t/5d35a36bacbab824395170f9d9d949ea.eot");
     src: url("//db.onlinewebfonts.com/t/5d35a36bacbab824395170f9d9d949ea.eot?#iefix") format("embedded-opentype"),
     url("//db.onlinewebfonts.com/t/5d35a36bacbab824395170f9d9d949ea.woff2") format("woff2"),
@@ -66,7 +66,7 @@ a {
     color: white;
 }
 
-a:hover {
+nav a:hover, p a:hover {
     border-bottom: 1px solid white;
 }
 
@@ -138,7 +138,6 @@ a.scroll i:hover {
     justify-content: space-between;
     z-index: 1;
     padding: 1rem;
-    position: sticky;
     top: 0;
     z-index: 100;
 }
@@ -284,7 +283,6 @@ a img:hover {
 
 .group-info .author-signature {
     text-align: end;
-    text-transform: lowercase;
     font-family: "IndustryW00-Book";
 }
 
@@ -415,10 +413,30 @@ a img:hover {
 /* END OF MUSIC */
 
 /* CONTACTS */
+#contacts {
+    display: grid;
+    grid-template-areas: 
+        "h1 h1"
+        "div1 div2";
+        grid-gap: 3rem;
+        padding: 0 5rem;
+        padding-bottom: 4rem;
+}
+
+.twitter-feed {
+    display: grid;
+    grid-area: div1;
+}
+
+.contact-form {
+    grid-area: div2;
+}
+
 #contacts h1 {
+    grid-area: h1;
     text-align: center;
     padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding-bottom: 0.6rem;
     text-transform: uppercase;
     font-family:'Raleway';
 }
@@ -465,6 +483,36 @@ a img:hover {
   font-weight:700;
 }
 #contacts [type="submit"]:hover { background: darkgray; }
+
+@media only screen and (max-width: 768px) {
+    #contacts {
+        display: grid;
+        grid-template-areas: 
+            "h1"
+            "div1";
+            grid-gap: 0.5rem;
+            padding: 0 5rem;
+            padding-bottom: 4rem;
+    }
+    
+    .twitter-feed {
+        display: hidden;
+    }
+    
+    .contact-form {
+        display: none;
+        
+    }
+    
+    #contacts h1 {
+        grid-area: h1;
+        text-align: center;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        text-transform: uppercase;
+        font-family:'Raleway';
+    }
+}
 /* CONTACTS */
 
 /* FOOTER */
@@ -493,8 +541,9 @@ footer {
 .ft-band-paragraph {
     color: white;
     max-width: 200px;
-    font-size: 0.65rem;
+    font-size: 0.75rem;
     font-family: "IndustryW00-Book";
+    /* font-family: "Proxima Nova"; */
 }
 
 .social-icons i {
@@ -581,6 +630,11 @@ input[type="submit"] {
     border: 0;
     padding: 0.625rem 0.9375rem;
     margin-top: 0.3125rem;
+}
+
+.fab fa-twitter::after {
+    border: none;
+    text-decoration: none;
 }
 
 @media only screen and (max-width: 600px) {
