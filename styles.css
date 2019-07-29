@@ -266,7 +266,7 @@ a img:hover {
 }
 
 .group-info {
-    font-family: "Proxima Nova";
+    font-family: "Proxima Nova, Roboto";
     line-height: 1.5rem;
     color: white;
     /* grid-row: 1 / span 1; */
