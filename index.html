@@ -10,14 +10,16 @@
     <link rel="manifest" href="/site.webmanifest">
     <title>CVABA 3A CMET | Официален уебсайт // SLAVA ZA SMET | Official Band Website</title>
 	<meta name="description" content="Official website for the bulgarian rock band Slava Za Smet. 
-	Leading band member is Rossen Tenev (aka Rosen Tenev). Designed by Hristiyan Maverov. Maverov Ventures. HM Capital. Rock Band Haskovo.
+	Leading band member is Rossen Tenev (aka Rosen Tenev). Designed and developed by Hristiyan Maverov (software engineer / dev). Maverov Ventures. HM Capital. Rock Band Haskovo.
 	Официален уебсайт на рок бандата Слава За Смет на Росен Тенев. Сайта е разработен от Християн Маверов и Maverov Ventures и Maverov Media. 
 	CVABA 3A CMET Hristiyan Maverov Hristian Maverov Maverov Media Slava za smet slava za smet maverov ventures Maverov Ventures Maverov Consulting Maverov Media слава за смет rossen tenev rosen tenev росен тенев">
 	<meta name="keywords" content="slava za smet, слава за смет, rock band, haskovo, bulgaria, Rossen Tenev, Rosen Tenev, Hristiyan Maverov, Maverov Ventures">
     <!-- Font Awesome Dependancy -->
     <script src="https://kit.fontawesome.com/1f704fead3.js"></script>
     <!-- CSS Stylesheet -->
+    
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <!-- Font License -->
     <link href="//db.onlinewebfonts.com/c/05289e866fe7e1e99d27a7a31f8d3b66?family=Trattatello" rel="stylesheet" type="text/css"/>
     <link href="//db.onlinewebfonts.com/c/70bbafa413a4a6fc028125a7a06d8103?family=Proxima+Nova" rel="stylesheet" type="text/css"/>
@@ -36,6 +38,8 @@
             <li><a href="#music">Music</a></li>
             <li><a href="#contacts">Contacts</a></li>
         </ul>
+
+        <div class="toggleMenu"><i class="fas fa-bars"></i></div>
     </nav>
 
     <div class="banner">
@@ -70,8 +74,8 @@
                 <p><b>Слава За Смет</b> е солов <b>Pop-Punk / Emo / Alternative Rock</b> проект на Росен Тенев - китарист, вокалист и лирик;<br />
                     <br />
                     Зимата на 2016-та срещу 2017-та беше доста студена и емоционално тежка. Покрай все още тлеещите мои и тепърва разбушували се техни младежки хормони, аз и моите нови приятели - Росица Иванова и Тодор Петров - Тото, сформирахме една стилово еклектична пънк банда, която полуиронично назовахме Слава За Смет. Идеята бе, името да бъде нож с две остриета - едновременно в упрек към собственото ни невежо творчество и липсата на добра култура в популярната медия.<br /><br />Съставът просъществува за около пет месеца, и изнесе концерт и половина. В последствие, Тото Петров напусна бандата, за да сформира Спални Места с нашия колега и приятел Кубрат Аргилашки, докато аз бях натоварен с тежката задача - да се дипломирам! Това постави многоточието в края на тази преждевременно „приключила“ история и зададе началото на нов абзац, който дори в момента продължава да се пише…</p>
-                <p class="author-signature">- Rossen Tenev, 2019</p>
-                <a href="#tour"><button class="more">Find out more</button></a> 
+                <p class="author-signature">- Rossen Tennev, 2019</p>
+                <a href="#music"><button class="more">Find out more</button></a> 
             </div>
         </div>
         
@@ -80,7 +84,7 @@
 <!-- END OF ABOUT -->
 
 <!-- TOUR DATES SECTION -->
-<section id="tour" class="bg-dark">
+<!-- <section id="tour" class="bg-dark">
     <div class="container">
         <h1 class="l-heading text-center pt-1">TOUR DATES</h1>
         <div class="tour-table" class="mt-1">
@@ -101,16 +105,18 @@
                 <a href="" class="buy-tickets">Tickets</a>
             </div>
     </div>
-</section>
+</section> -->
 <!-- END OF TOUR DATES SECTION -->
 
 <!-- MUSIC -->
-<section id="music">
-    <div class="container">
-            <h1 class="l-heading">MUSIC</h1>
-        <div class="music-playlist">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/4a1iFio1Ii4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  
-        </div>
+<section id="music" class="bg-dark">
+    <h1 class="m-heading">MUSIC</h1>
+    <div class="main-carousel">
+        <div class="carousel-cell"><iframe width="560" height="415" src="https://www.youtube.com/embed/hJVP7Gk1wVs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+        <div class="carousel-cell"><iframe width="560" height="415" src="https://www.youtube.com/embed/K46PeWOnzJs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+        <div class="carousel-cell"><iframe width="560" height="415" src="https://www.youtube.com/embed/KposF7FT8e8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+        <div class="carousel-cell"><iframe width="560" height="415" src="https://www.youtube.com/embed/x3OnBk9XoOI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+        <div class="carousel-cell"><iframe width="560" height="415" src="https://www.youtube.com/embed/XSpuFxWh20k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
     </div>
 </section>
 <!-- END OF MUSIC -->
@@ -185,7 +191,8 @@ src="https://code.jquery.com/jquery-3.3.1.min.js"
 integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
 crossorigin="anonymous"></script>
 
-<script src="js/main.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+
 <script type='text/javascript' src='Auz-Bug-92fb1fb/bug-min.js'></script>
 		<script type='text/javascript'>
 			// default fruit fly bug:
@@ -199,5 +206,7 @@ crossorigin="anonymous"></script>
 		</script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDoZg2Es_GrQHZf_52j2-xZ3cTfBCR0HII&callback=initMap"
 async defer></script>
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+<script type="text/javascript" src="carousel.js"></script>
 </body>
 </html>

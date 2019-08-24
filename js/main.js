@@ -20,7 +20,6 @@ window.addEventListener('scroll', function() {
   }
 });
 
-
 // Smooth Scrolling
 $('a, .scroll-down').on('click', function(event) {
   if (this.hash !== '') {

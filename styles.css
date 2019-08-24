@@ -164,12 +164,26 @@ a.scroll i:hover {
     margin-right: 2rem;
 }
 
+.toggleMenu {
+    display: none;
+}
+
 #navbar ul li a:hover {
     color: lightgray;
     border-bottom: 1px solid lightgray;
     padding-bottom: 0.3rem;
 }
 
+@media only screen and (max-width: 700px) {
+    #navbar ul {
+        display: none;
+    }
+
+    .toggleMenu {
+        display: block;
+        font-size: 1.7rem;
+    }
+  }
 /* HEADER */
 
 .header-photo {
@@ -395,15 +409,9 @@ a img:hover {
 
 /* MUSIC */
 #music {
-    background-color: #000000;
+    background-color: #272727;
     min-height: 80vh;
-}
-
-.music-playlist {
-    display: flex;
-    justify-content: center;
-    padding-top: 4rem 0;
-    padding-bottom: 2rem;
+    padding-bottom: 6rem;
 }
 
 #music h1 {
@@ -412,6 +420,19 @@ a img:hover {
     padding-bottom: 2rem;
 }
 
+.carousel-cell {
+    width: 100%; /* full width */
+    height: 360px; /* height of carousel */
+    margin-right: 10px;
+    text-align: center;
+}
+
+.m-heading {
+    font-family: 'Raleway';
+    font-size: 3rem;
+    line-height: 1.1;
+    font-weight: bold;
+}
 /* END OF MUSIC */
 
 /* CONTACTS */
@@ -544,7 +565,6 @@ footer {
     color: white;
     max-width: 200px;
     font-size: 0.75rem;
-    font-family: "IndustryW00-Book";
     /* font-family: "Proxima Nova"; */
 }
 
@@ -640,9 +660,35 @@ input[type="submit"] {
 }
 
 @media only screen and (max-width: 600px) {
+    footer {
+        flex-direction: column;
+        justify-content: center;
+    }
+
     .ft-main-item {
       width: 100%;
       margin-bottom: 2rem;
+    }
+
+    .ft-band-paragraph {
+        max-width: none;
+        padding-bottom: 1rem;
+    }
+
+    .social-icons {
+        max-width: 320px;
+    }
+
+    .lower-footer {
+        padding-top: 1.7rem;
+    }
+
+    .copyright {
+        padding-top: 2rem;
+    }
+
+    .dev {
+        padding-top: 1rem;
     }
 
     .lower-footer {
@@ -653,7 +699,20 @@ input[type="submit"] {
     .sponsors img {
         display: block;
         padding-bottom: 1rem;
-        padding-left: 9rem;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .ft-main-item {
+        text-align: center;
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+    .sponsors {
+        padding: 2rem 0;
+        text-align: center;
+        justify-content: center;
     }
 
     form, .subs {
